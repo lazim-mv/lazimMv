@@ -2,26 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'extraBoldFont';
+  src: url('../../public/Fonts/BarlowCondensed-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bFont';
+  src: url('../../public/Fonts/BarlowCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'extraLightFont';
+  src: url('../../public/Fonts/BarlowCondensed-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mFont';
+  src: url('../../public/Fonts/BarlowCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'rFont';
+  src: url('../../public/Fonts/BarlowCondensed-Regular.ttf') format('truetype');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --regular: 200;
+  --bold: 500;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(245deg, rgba(5, 27, 61, 1)25%, rgba(27, 92, 124, 1) 45%, rgba(5, 27, 61, 1) 65%);  font-family: 'bFont';
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+  /* background-image: radial-gradient(circle farthest-corner at 50% 50%, #0D3150, #000); */
+  font-weight: var(--bold);
+  color: #fff;
+  font-family: 'rFont' !important;
+  overflow-x: hidden;
+  letter-spacing: 5px;
+}
+.heroLeftHeadingContainer{
+  font-family: 'extraBoldFont' !important;
+}
+
+.heroRightHeadingContainer{
+  font-family: 'extraBoldFont' !important;
+}
+
+.heroLeftHeadingText{
+  line-height: 0.8;
+  font-size: 6rem;
+  letter-spacing: 10px;
+}
+
+.heroRightHeadingText{
+  line-height: 0.8 !important;
+  letter-spacing: 10px;
+  font-size: 6rem;
+}
+
+.heroRightImageContainer{
+  /* display: none; */
+}
+
+.heroDescText{
+  letter-spacing: 5px;
+}
+
+.videoContainer{
+  position: relative;
+  margin-top: 45px; 
+  margin-bottom: 45px; 
+  width: 100%;
+}
+
+.videoWrapper {
+  position: absolute;
+}
+
+.videoBackground {
+  width: 510px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.expHeadingText{
+  font-size: 5.5rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-family: 'extraBoldFont';
+}
+
+.expDecText{
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.logoContainer{
+  filter: grayscale(1);
+}
+
+.m2hLogo{
+  height: 100px !important;
+  width: 100px !important;
+  object-fit: contain;
+}
+
+.workPhilosophyHeading{
+  font-size: 1.7rem;
+  font-family: 'bFont';
+  color: #0A3377;
+}
+
+.workPhilosophyDesc{
+  font-family: 'bFont';
+  font-size: 5rem;
+  line-height: 1.4;
 }
