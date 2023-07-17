@@ -17,13 +17,13 @@ function Experience() {
       </div>
       <div className="logoContainer flex self-center items-center gap-28 mt-14">
         <div className="logo2">
-          <Image src={Nexwave} width={383} height={55} />
+          <Image src={Nexwave} width={383} height={55} alt="nexwave" />
         </div>
         <div className="logo1">
-          <Image className="m2hLogo" src={M2h} width={90} height={100} />
+          <Image className="m2hLogo" src={M2h} width={90} height={100} alt="m2h"/>
         </div>
         <div className="logo3">
-          <Image src={Procube} width={383} height={130} />
+          <Image src={Procube} width={383} height={130} alt="Procube"/>
         </div>
       </div>
 
