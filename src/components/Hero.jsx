@@ -1,15 +1,23 @@
+"use client";
 import React from "react";
 import "../app/globals.css";
 import Image from "next/image";
 import myImage from "../../public/images/Lazim.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <>
       <div className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28">
-        <div className="heroLeftContainer flex flex-1 flex-col ">
+        <motion.div
+          className="heroLeftContainer flex flex-1 flex-col "
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          exist={{ opacity: 0, x: -200 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+        >
           <div className="heroLeftHeadingContainer">
             <h1 className="heroLeftHeadingText">UNLEASHING</h1>
             <h1 className="heroLeftHeadingText">INSPIRATION</h1>
@@ -22,25 +30,47 @@ function Hero() {
               </video>
             </div>
           </div>
-        </div>
-        <div className="heroRightContainer flex flex-1 flex-col justify-end">
+        </motion.div>
+        <motion.div
+          className="heroRightContainer flex flex-1 flex-col justify-end"
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          exist={{ opacity: 0, x: 200 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+        >
           <div className="heroRightImageContainer self-end">
             <Image src={myImage} width={320} height={320} alt="" />
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="heroBottomContainer container flex justify-between pt-3 pl-32 pr-28">
+      <motion.div
+        className="heroBottomContainer container flex justify-between pt-3 pl-32 pr-28"
+        initial={{ opacity: 0, y: 200 }}
+        animate={{ opacity: 1, y: 0 }}
+        exist={{ opacity: 0, y: 200 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+      >
         <div className="heroDownArrowContainer self-end">
-          <FontAwesomeIcon className="text-8xl" icon={faArrowDown} fade style={{color: "#ededee",}} />
+          <FontAwesomeIcon
+            className="text-8xl"
+            icon={faArrowDown}
+            fade
+            style={{ color: "#ededee" }}
+          />
         </div>
         <div className="heroShortDescContainer self-end">
-          <p className="text-2xl heroDescText">Discover a world of<br/> captivating design,<br/> curated with passion<br/> and precision.</p>
+          <p className="text-2xl heroDescText">
+            Discover a world of
+            <br /> captivating design,
+            <br /> curated with passion
+            <br /> and precision.
+          </p>
         </div>
         <div className="heroRightHeadingContainer self-center pt-8">
           <h1 className="text-7xl heroRightHeadingText">LAZIM</h1>
           <h1 className="text-7xl heroRightHeadingText">LATHEEF</h1>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -3,9 +3,11 @@ import Image from "next/image";
 import M2h from "../../public/images/m2h.png";
 import Nexwave from "../../public/images/nexwave1.png";
 import Procube from "../../public/images/ProCube.png";
+import AnimationWrapper from "./AnimationWrapper";
 
 function Experience() {
   return (
+    <AnimationWrapper>
     <div className='expContainer flex flex-col container mt-52 mx-auto'>
       <div className='expTextContainer text-center'>
         <h5 className='workPhilosophyHeading'>EXPERIENCE</h5>
@@ -45,6 +47,7 @@ function Experience() {
         </div>
       </div>
     </div>
+    </AnimationWrapper>
   );
 }
 

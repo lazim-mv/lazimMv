@@ -6,6 +6,7 @@ import Head from "next/head";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Experience from "@/components/Experience";
+import AnimationWrapper from "@/components/AnimationWrapper";
 config.autoAddCss = false;
 
 const Home = () => {
@@ -20,8 +21,10 @@ const Home = () => {
       <main>
         <div className="appContainer container m-auto">
           <Header />
+          <AnimationWrapper>
           <Hero />
           <Experience/>
+          </AnimationWrapper>
         </div>
       </main>
     </>
