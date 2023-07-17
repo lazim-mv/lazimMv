@@ -30,7 +30,7 @@ function Experience() {
       <div className="workPhilosophy mt-52 text-center">
         <h5 className="workPhilosophyHeading">WORK PHILOSOPHY</h5>
         <h1 className="workPhilosophyDesc mt-14">
-        &quot;Elevating usability is my
+          &quot;Elevating usability is my
           <br /> goal, designing experiences
            that span generations&quot;
         </h1>
