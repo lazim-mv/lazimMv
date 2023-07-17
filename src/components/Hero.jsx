@@ -1,7 +1,6 @@
 import React from "react";
 import "../app/globals.css";
 import Image from "next/image";
-import hImage from "../../public/images/mySelf.png";
 import myImage from "../../public/images/Lazim.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -26,7 +25,7 @@ function Hero() {
         </div>
         <div className="heroRightContainer flex flex-1 flex-col justify-end">
           <div className="heroRightImageContainer self-end">
-            <Image src={myImage} width={320} height={320} />
+            <Image src={myImage} width={320} height={320} alt="" />
           </div>
         </div>
       </div>
