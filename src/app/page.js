@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -6,7 +7,9 @@ import Head from "next/head";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Experience from "@/components/Experience";
-import AnimationWrapper from "@/components/AnimationWrapper";
+// import AnimationWrapper from "@/components/AnimationWrapper";
+import Work from "@/components/Work";
+import Project from "@/components/Project";
 config.autoAddCss = false;
 
 const Home = () => {
@@ -21,10 +24,10 @@ const Home = () => {
       <main>
         <div className="appContainer container m-auto">
           <Header />
-          <AnimationWrapper>
           <Hero />
-          <Experience/>
-          </AnimationWrapper>
+          <Experience />
+          <Work />
+          <Project/>
         </div>
       </main>
     </>

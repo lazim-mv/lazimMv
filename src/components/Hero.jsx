@@ -13,9 +13,9 @@ function Hero() {
       <div className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28">
         <motion.div
           className="heroLeftContainer flex flex-1 flex-col "
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -150 }}
           animate={{ opacity: 1, x: 0 }}
-          exist={{ opacity: 0, x: -200 }}
+          exist={{ opacity: 0, x: -150 }}
           transition={{ delay: 0.1, duration: 0.5 }}
         >
           <div className="heroLeftHeadingContainer">
@@ -33,9 +33,9 @@ function Hero() {
         </motion.div>
         <motion.div
           className="heroRightContainer flex flex-1 flex-col justify-end"
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
-          exist={{ opacity: 0, x: 200 }}
+          exist={{ opacity: 0, x: 150 }}
           transition={{ delay: 0.1, duration: 0.5 }}
         >
           <div className="heroRightImageContainer self-end">
@@ -45,9 +45,9 @@ function Hero() {
       </div>
       <motion.div
         className="heroBottomContainer container flex justify-between pt-3 pl-32 pr-28"
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: 150 }}
         animate={{ opacity: 1, y: 0 }}
-        exist={{ opacity: 0, y: 200 }}
+        exist={{ opacity: 0, y: 150 }}
         transition={{ delay: 0.1, duration: 0.5 }}
       >
         <div className="heroDownArrowContainer self-end">

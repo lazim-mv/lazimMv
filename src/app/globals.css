@@ -124,3 +124,67 @@ body {
   font-size: 5rem;
   line-height: 1.4;
 }
+
+.pCard1{
+  height: 350px;
+  width: 90%;
+  /* background: white; */
+  border-radius: 13px;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+}
+
+.pImageNex{
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.pTextContainer{
+  flex: 1;
+}
+
+.pTextContainer h3{
+  padding-top: 2px;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  font-size: 1.1rem;
+  font-family: 'mFont';
+}
+
+.buttonContainer{
+  display: flex;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  font-size: 1.6rem;
+  font-family: 'mFont';
+  width: 175px;
+  height: 50px;
+  border: 1px solid #0A33D2;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-radius: 100px;
+  margin: 0px auto;
+}
+
+.button:hover {
+  background-color: #0A33D2;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* .pImageContainer{
+  position: absolute;
+  left: 28%;
+} */
+
+/* .pImageNex{
+  object-fit: cover;
+  object-position: top;
+  height: 340px;
+  width: 200px;
+} */
