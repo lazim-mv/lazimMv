@@ -6,8 +6,9 @@ import AnimationWrapper from "./AnimationWrapper";
 
 function Project() {
   return (
-      <div className="projectContianer container mt-52 mb-52 ">
-    <AnimationWrapper>
+    <div className="projectContianer container mt-52 ">
+      <h5 className="workPhilosophyHeading text-center mb-16">PROJECT</h5>
+      <AnimationWrapper>
         <div className="pCard1 flex mx-auto">
           <div className="pTextContainer">
             <h3>
@@ -17,17 +18,19 @@ function Project() {
               aesthetic appeal and user-friendly functionality
             </h3>
             <div className="buttonContainer">
-              <button className="button">Preview</button>
+              <a href="https://www.nexwave.cx/" className="button">
+                Preview
+              </a>
             </div>
           </div>
           <div className="pImageContainer">
             <Image className="pImageNex" src={nex} alt="" />
           </div>
         </div>
-    </AnimationWrapper>
+      </AnimationWrapper>
 
-    <AnimationWrapper>
-        <div className="pCard1 flex mx-auto mt-16">
+      <AnimationWrapper>
+        <div className="pCard1 flex mx-auto mt-20">
           <div className="pTextContainer">
             <h3>
               Our expertly crafted website seamlessly combines stunning web
@@ -36,15 +39,17 @@ function Project() {
               aesthetic appeal and user-friendly functionality
             </h3>
             <div className="buttonContainer">
-              <button className="button">Preview</button>
+              <a href="https://procube.cx/" className="button">
+                Preview
+              </a>
             </div>
           </div>
           <div className="pImageContainer">
             <Image className="pImageNex" src={proc} alt="" />
           </div>
         </div>
-    </AnimationWrapper>
-      </div>
+      </AnimationWrapper>
+    </div>
   );
 }
 

@@ -169,6 +169,8 @@ body {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border-radius: 100px;
   margin: 0px auto;
+  text-align: center;
+  padding: 5px;
 }
 
 .button:hover {
@@ -177,14 +179,148 @@ body {
   border-color: transparent;
 }
 
-/* .pImageContainer{
-  position: absolute;
-  left: 28%;
-} */
+.contactMainTextContainer{
+  width: 58%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
 
-/* .pImageNex{
+.contactMainText{
+  font-family: 'extraBoldFont';
+  font-size: 9rem;
+}
+
+.contactBoxContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+
+.socialContainer{
+  height: 50%;
+  width: 50%;
+}
+
+.BoxTittle{
+  font-size: 2rem;
+  font-family: 'bFont';
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #333;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Add social media brand colors on hover */
+.socialIcon.instagram:hover {
+  background-color: #e4405f; 
+  box-shadow: 0px -1px 25px rgba(228, 64, 95, 1); 
+}
+
+.socialIcon.linkedin:hover {
+  background-color: #0077b5; 
+  box-shadow: 0px -1px 25px rgba(0, 114, 177, 1); 
+}
+
+.socialIcon.github:hover {
+  background-color: #777; 
+  box-shadow: 0px -1px 25px rgba(51, 51, 51, 1); 
+}
+
+.socialIcon.whatsapp:hover {
+  background-color: #25d366;
+  box-shadow: 0px -1px 25px rgba(37, 211, 102, 1) 
+}
+
+/* Increase the size of the icons */
+.socialIcon svg {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.emoji{
+  width: 50%;
+  height: 50%;
+  background-color: #172554;
+  border: none !important;
+}
+
+.quote{
+  width: 50%;
+  height: 50%;
+  background-color: #172554;
+  border: none !important;
+}
+
+.some{
+  width: 50%;
+  height: 50%;
+  border: none !important;
+}
+
+.videoContainer1{
+  margin-top: 15px;
+  width: 100%;
+}
+
+.videoBackground1{
+  width: 510px;
+  height: 180px;
+  padding: 0px;
   object-fit: cover;
-  object-position: top;
-  height: 340px;
-  width: 200px;
-} */
+  margin: 0 0 0 auto;
+}
+
+.mail{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.btnContainer .btn{
+  background: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  font-family: 'mFont';
+  width: 232px;
+  height: 50px;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-radius: 100px;
+  margin: 0px auto;
+  box-shadow: 0 0 10px   rgba(23, 37, 84,0.8), 
+              0 0 20px   rgba(23, 37, 84,0.8), 
+              0 0 40px   rgba(23, 37, 84,0.8), 
+              0 0 80px   rgba(23, 37, 84,0.8);
+}
+
+.btnContainer .btn:hover{
+  background: linear-gradient(67deg, rgba(3,7,13,1) 0%, rgba(89,96,97,0.8) 53%, rgba(3,7,13,1) 100%);
+  color: #000;
+  font-family: 'bFont';
+}
+

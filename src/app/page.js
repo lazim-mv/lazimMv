@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 // import AnimationWrapper from "@/components/AnimationWrapper";
 import Work from "@/components/Work";
 import Project from "@/components/Project";
+import Contact from "@/components/Contact";
 config.autoAddCss = false;
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
           <Experience />
           <Work />
           <Project/>
+          <Contact/>
         </div>
       </main>
     </>

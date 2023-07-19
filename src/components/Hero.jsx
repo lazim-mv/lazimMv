@@ -6,17 +6,20 @@ import myImage from "../../public/images/Lazim.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import AnimationWrapper from "./AnimationWrapper";
+import HeroAnimationWrapper from "./HeroAnimationWrapper";
 
 function Hero() {
   return (
     <>
+    <HeroAnimationWrapper>
       <div className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28">
         <motion.div
           className="heroLeftContainer flex flex-1 flex-col "
           initial={{ opacity: 0, x: -150 }}
           animate={{ opacity: 1, x: 0 }}
           exist={{ opacity: 0, x: -150 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0, duration: 0.5 }}
         >
           <div className="heroLeftHeadingContainer">
             <h1 className="heroLeftHeadingText">UNLEASHING</h1>
@@ -36,7 +39,7 @@ function Hero() {
           initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
           exist={{ opacity: 0, x: 150 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
+          transition={{ delay: 0, duration: 0.5 }}
         >
           <div className="heroRightImageContainer self-end">
             <Image src={myImage} width={320} height={320} alt="" />
@@ -48,7 +51,7 @@ function Hero() {
         initial={{ opacity: 0, y: 150 }}
         animate={{ opacity: 1, y: 0 }}
         exist={{ opacity: 0, y: 150 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
+        transition={{ delay: 0, duration: 0.5 }}
       >
         <div className="heroDownArrowContainer self-end">
           <FontAwesomeIcon
@@ -71,6 +74,7 @@ function Hero() {
           <h1 className="text-7xl heroRightHeadingText">LATHEEF</h1>
         </div>
       </motion.div>
+      </HeroAnimationWrapper>
     </>
   );
 }

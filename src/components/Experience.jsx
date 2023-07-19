@@ -18,8 +18,10 @@ function Experience() {
   }, [inView]);
 
   const variants = {
-    visible: { y: 0, transition: { duration: 0.5, type: "spring", damping: 10, stiffness: 100 } }, // Bounce animation when in view
-    hidden: { y: 100 }, // Initial rotation state (hidden)
+    // Bounce animation when in view
+    // visible: { y: 0, transition: { duration: 1, type: "spring", damping: 8, stiffness: 2000 } }, 
+    // Height of bounce
+    // hidden: { y: 100 }, 
   };
 
   return (
