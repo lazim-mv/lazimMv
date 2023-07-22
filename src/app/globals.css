@@ -46,8 +46,19 @@ body {
   overflow-x: hidden;
   letter-spacing: 5px;
 }
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 .heroLeftHeadingContainer{
   font-family: 'extraBoldFont' !important;
+}
+
+.heroRightContainer{
+  width: 100%;
 }
 
 .heroRightHeadingContainer{
@@ -71,7 +82,12 @@ body {
 }
 
 .heroDescText{
-  letter-spacing: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.heroMobileDescText{
+  display: none;
 }
 
 .videoContainer{
@@ -125,6 +141,10 @@ body {
   line-height: 1.4;
 }
 
+.workDescContainer{
+  width: 70%;
+}
+
 .pCard1{
   height: 350px;
   width: 90%;
@@ -140,30 +160,48 @@ body {
 
 .pTextContainer{
   flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.pTextContainer h3{
-  padding-top: 2px;
-  text-align: left;
+.projectDesc{
+  padding-top: 10px;
+  text-align: center;
   width: 90%;
   margin: auto;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family: 'mFont';
+  margin-bottom: 4rem;
 }
 
+.cardTitle{
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: 'bFont';
+  padding-top: 25px;
+}
+
+.cardDesc{
+  text-transform: lowercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .buttonContainer{
   display: flex;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .button {
-  background-color: transparent;
+  background-color: rgb(65,50,50);
   color: white;
   font-size: 1.6rem;
-  font-family: 'mFont';
+  font-family: 'extraLightFont';
   width: 175px;
   height: 50px;
-  border: 1px solid #0A33D2;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -216,6 +254,7 @@ body {
   flex: 1;
   flex-wrap: wrap;
   gap: 30px;
+  overflow: hidden;
 }
 
 .socialIcon {
@@ -324,3 +363,183 @@ body {
   font-family: 'bFont';
 }
 
+.workMobilePhilosophyDesc{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  *{
+    padding: 0px !important;
+  }
+
+  body{
+    background-image: radial-gradient(circle farthest-corner at 100% 50%, #0f0c25, #0f0c25) !important;
+  }
+
+  .headerList h6 {
+    font-size: 1rem;
+  }
+
+  .heroMainContainer{
+    flex-direction: column;
+    overflow: hidden !important;
+  }
+
+  .videoContainer{
+    display: none;
+  }
+
+  .heroLeftContainer{
+    overflow: hidden !important;
+    justify-content: center;
+    margin: 60px auto;
+  }
+
+  .heroLeftHeadingContainer{
+    overflow: hidden !important;
+  }
+
+  .heroLeftHeadingText{
+    margin-top: 20px;
+    font-size: 5rem;
+    letter-spacing: 0;
+  }
+
+  .heroRightContainer{
+    align-items: center;
+  }
+
+  .heroRightImageContainer{
+    width: 100%;
+  }
+
+  .heroRightImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroRightHeadingContainer h1{
+    font-size: 5rem;
+  }
+  
+  .heroDownArrowContainer{
+    display: none;
+  }
+
+  .heroBottomContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroShortDescContainer{
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .heroDescText{
+    display: none;
+  }
+
+  .heroMobileDescText{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0px 5px !important;
+
+  }
+
+  .expHeadingText{
+    font-size: 3.3rem;
+  }
+
+  .expDecText{
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    padding: 0px 5px !important;
+  }
+
+  .logoContainer{
+    gap: 5px !important;
+  }
+
+  .logoContainer img{
+    width: 120px;
+  }
+
+  .logoContainer .m2hLogo{
+    width: 102px !important;
+    height: 60px !important;
+  }
+
+  .workPhilosophyDesc{
+    display: none;
+  }
+
+  .workDescContainer{
+    width: 100% !important;
+  }
+
+  .workDescContainer .expDecText{
+    padding: 0px 10px !important;
+  }
+
+  .workMobilePhilosophyDesc{
+    display: flex;
+    font-family: 'bFont';
+    font-size: 3.3rem;
+    line-height: 1.4;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+
+  .pCard1{
+    flex-direction: column;
+    /* margin-bottom: 180px; */
+    height: auto;
+  }
+
+  .pImageNex{
+    border-radius: 13px;
+    height: 240px;
+  }
+
+  .cardTitle{
+    padding-top: 25px !important;
+  }
+
+  .cardDesc{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .button{
+    padding: 5px !important;
+    letter-spacing: normal;
+  }
+
+  .contactMainTextContainer{
+    width: 100%;
+    padding: 0px 10px !important;
+  }
+
+  .contactMainText{
+    font-size: 5rem;
+  }
+
+  .contactContainer{
+    flex-direction: column;
+  }
+
+  .contactBoxContainer{
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  .videoBackground1{
+    width: 100%;
+  }
+
+}

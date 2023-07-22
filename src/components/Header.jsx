@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Header() {
   return (
     <motion.div
-      className="container flex justify-around items-center h-20 shadow-lg shadow-blue-950 headerList"
+      className="headerList container flex justify-around items-center h-20 shadow-lg shadow-blue-950"
       initial={{ opacity: 0, y: -200 }}
       animate={{ opacity: 1, y: 0 }}
       exist={{ opacity: 0, y: -200 }}
