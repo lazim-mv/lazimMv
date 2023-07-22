@@ -72,7 +72,7 @@ body {
 }
 
 .heroRightHeadingText{
-  line-height: 0.8 !important;
+  /* line-height: 0.8 !important; */
   letter-spacing: 10px;
   font-size: 6rem;
 }
