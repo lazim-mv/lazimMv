@@ -37,9 +37,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(245deg, rgba(5, 27, 61, 1)25%, rgba(27, 92, 124, 1) 45%, rgba(5, 27, 61, 1) 65%);  font-family: 'bFont';
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+  /* background: linear-gradient(245deg, rgba(5, 27, 61, 1)25%, rgba(27, 92, 124, 1) 45%, rgba(5, 27, 61, 1) 65%);  font-family: 'bFont'; */
   /* background-image: radial-gradient(circle farthest-corner at 50% 50%, #0D3150, #000); */
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
   font-weight: var(--bold);
   color: #fff;
   font-family: 'rFont' !important;
@@ -51,6 +51,10 @@ body {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+
+.mobileHeader{
+  display: none;
 }
 
 .heroLeftHeadingContainer{
@@ -352,6 +356,7 @@ body {
   display: none;
 }
 
+
 @media (max-width: 600px) {
   *{
     padding: 0px !important;
@@ -360,6 +365,69 @@ body {
   body{
     background-image: radial-gradient(circle farthest-corner at 100% 50%, #0f0c25, #0f0c25) !important;
   }
+
+  .mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px !important;
+    background-color: transparent;
+  }
+
+  .resume{
+    display: flex;
+  }
+
+  .resume p{
+    font-family: "bFont";
+    margin-right: 10px;
+  }
+
+  .iconDownload{
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .headerList{
+    display: none;
+  }
+
+  .hamBurgerContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamBurger {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .mobileMenuList {
+    flex-direction: column;
+    display: none; 
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    padding-bottom: 30px !important;    
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+  }
+
+  .mobileMenuList h6 {
+    margin: 8px 0;
+    color: white;
+    cursor: pointer;
+    font-family: 'rFont';
+    text-align: center;
+    /* padding: 0px 10px !important; */
+  }
+
+  .pr{
+    padding-right: 50px !important;
+  }
+  
 
   .headerList h6 {
     font-size: 1rem;
