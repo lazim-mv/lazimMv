@@ -2,7 +2,7 @@
 import React from "react";
 import "../app/globals.css";
 import Image from "next/image";
-import myImage from "../../public/images/Lazim.png";
+import myImage from "../../public/images/mySelf.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
