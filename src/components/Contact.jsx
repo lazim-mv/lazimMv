@@ -28,15 +28,15 @@ function Contact() {
       <div className="contactBoxContainer">
         <div className="videoContainer1">
           <div className="videoWrapper1">
-            <video className="videoBackground1 pt-3" autoPlay loop muted>
-              <source src="/images/contactVideo.mp4" type="video/mp4" />
+            <video className="videoBackground1 pt-3" autoPlay loop muted >
+              <source src="/images/contact1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
         <div className="mail ">
-          <div className="buttonContainer btnContainer">
-            <a href={constructMailtoLink()} className="button btn">
+          <div className="buttonContainer ">
+            <a href={constructMailtoLink()} className="button ">
               Say hy
             </a>
           </div>
