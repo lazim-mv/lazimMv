@@ -21,7 +21,7 @@ function Contact() {
   };
   return (
     <AnimationWrapper>
-    <div className="contactContainer container flex mt-52 mb-10">
+    <div id="contact" className="contactContainer container flex mt-52 mb-10">
       <div className="contactMainTextContainer">
         <h1 className="contactMainText">Let&apos;s create together!.</h1>
       </div>

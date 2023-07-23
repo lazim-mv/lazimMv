@@ -51,10 +51,20 @@ body {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .mobileHeader{
   display: none;
+}
+
+.resume{
+  display: flex;
+  align-items: center;
+}
+
+.resume h6{
+  margin-right: 5px;
 }
 
 .heroLeftHeadingContainer{
@@ -356,6 +366,177 @@ body {
   display: none;
 }
 
+/* --------------------------------------SKILLS SECTION START-------------------------------------------- */
+
+
+.skillCircle {
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  border-radius: 50%;
+  background: white;
+  margin: 190px auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2.75em;
+  font-weight: bold;
+  color: white;
+  transition: 0.24s 0.2s;
+}
+
+.skillsText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  font-family: 'bFont';
+  color: #0A33D2;
+}
+
+.mobileSkillsText{
+  display: none;
+}
+
+.skillsIcon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 150px solid transparent;
+  cursor: default;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 1.4s 0.07s;
+  z-index: -1;
+}
+
+.skillCircle:hover .skillsIcon {
+  transition: all 0.7s;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.skillsIcon li {
+  transition: all 0.7s;
+}
+
+.skillsIcon li .fab {
+  width: 55px;
+  height: 55px;
+  line-height: 45px;
+  border-radius: 50%;
+  border: 1px solid #172554;
+  position: absolute;
+  font-size: 59%;
+  color: white;
+  transition: 0.7s;
+  margin: 150px;
+  padding: 10px;
+}
+
+/* Spread out the icons 70% more when hovering */
+.skillCircle:hover .skillsIcon li:nth-child(1) {
+  transition-delay: 0.02s;
+  transform: rotate(85deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(1) .fab {
+  background: #E34F26; 
+  transition-delay: 0.04s;
+  transform: rotate(680deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(2) {
+  transition-delay: 0.06s;
+  transform: rotate(120deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(2) .fab {
+  background: #007396;
+  transition-delay: 0.12s;
+  transform: rotate(590deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(3) {
+  transition-delay: 0.1s;
+  transform: rotate(155deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(3) .fab {
+  background: #F7DF1E;
+  transition-delay: 0.2s;
+  transform: rotate(560deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(4) {
+  transition-delay: 0.14s;
+  transform: rotate(195deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(4) .fab {
+  background: #254BDD;
+  transition-delay: 0.28s;
+  transform: rotate(530deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(5) {
+  transition-delay: 0.18s;
+  transform: rotate(230deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(5) .fab {
+  background: #7952B3; 
+  transition-delay: 0.36s;
+  transform: rotate(500deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(6) {
+  transition-delay: 0.22s;
+  transform: rotate(265deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(6) .fab {
+  background: #003B57;
+  transition-delay: 0.44s;
+  transform: rotate(470deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(7) {
+  transition-delay: 0.26s;
+  transform: rotate(300deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(7) .fab {
+  background: #61DAFB;
+  transition-delay: 0.52s;
+  transform: rotate(440deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(8) {
+  transition-delay: 0.3s;
+  transform: rotate(335deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(8) .fab {
+  background: #DD1B16;
+  transition-delay: 0.6s;
+  transform: rotate(410deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(9) {
+  transition-delay: 0.34s;
+  transform: rotate(370deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(9) .fab {
+  background: #68A063;
+  transition-delay: 0.68s;
+  transform: rotate(380deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(10) {
+  transition-delay: 0.38s;
+  transform: rotate(410deg);
+}
+.skillCircle:hover .skillsIcon li:nth-child(10) .fab {
+  background: #306998;
+  transition-delay: 0.76s;
+  transform: rotate(360deg);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
+/* --------------------------------------SKILLS SECTION END-------------------------------------------- */
 
 @media (max-width: 600px) {
   *{
@@ -363,7 +544,7 @@ body {
   }
 
   body{
-    background-image: radial-gradient(circle farthest-corner at 100% 50%, #0f0c25, #0f0c25) !important;
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #0f0c25) !important;
   }
 
   .mobileHeader {
@@ -378,7 +559,7 @@ body {
     display: flex;
   }
 
-  .resume p{
+  .resume h3{
     font-family: "bFont";
     margin-right: 10px;
   }
@@ -406,22 +587,25 @@ body {
 
   .mobileMenuList {
     flex-direction: column;
+    justify-content: center;
     display: none; 
     position: absolute;
     width: 100%;
     left: 0;
     top: 80px;
+    height: 30vh;
     padding-bottom: 30px !important;    
     background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+    background: #0c0c24;
   }
 
-  .mobileMenuList h6 {
+  .mobileMenuList a {
     margin: 8px 0;
     color: white;
     cursor: pointer;
     font-family: 'rFont';
     text-align: center;
-    /* padding: 0px 10px !important; */
+    /* text-decoration: underline; */
   }
 
   .pr{
@@ -606,6 +790,42 @@ body {
     padding: 0px;
     object-fit: cover;
     margin: 0 auto;
+  }
+
+  .skillCircle{
+    width: 270px;
+    height: 270px;
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #000);
+  }
+
+  .skillsText{
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .mobileSkillsText{
+    display: flex;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+    font-family: 'bFont';
+    color: white;
+  }
+
+  .skillsIcon{
+    top: -13px;
+    left: -13px;
+    line-height: normals;
+  }
+
+  .skillsIcon li .fab{
+    margin: 100px;
+    width: 40px;
+    height: 40px;
+    padding: 5px !important;
+    text-align: center;
   }
 
 }

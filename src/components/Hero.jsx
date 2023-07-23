@@ -13,7 +13,7 @@ function Hero() {
   return (
     <>
       <HeroAnimationWrapper>
-        <div className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28">
+        <div id="home" className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28">
           <motion.div
             className="heroLeftContainer flex  flex-col "
             initial={{ opacity: 0, x: -150 }}

@@ -25,7 +25,7 @@ function Experience() {
   };
 
   return (
-    <div className="expContainer flex flex-col container mt-52 mx-auto">
+    <div id="experience" className="expContainer flex flex-col container mt-52 mx-auto">
       <div className="expTextContainer text-center">
         <h5 className="workPhilosophyHeading">EXPERIENCE</h5>
         <h1 className="expHeadingText mt-14">COMPANIES WHERE I HAVE WORKED</h1>

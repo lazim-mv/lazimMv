@@ -7,7 +7,7 @@ import AnimationWrapper from "./AnimationWrapper";
 function Project() {
   return (
     <>
-      <div className="projectContianer container mt-52 ">
+      <div id="project" className="projectContianer container mt-52 ">
         <h5 className="workPhilosophyHeading text-center mb-14">PROJECT</h5>
         <p className="projectDesc mb-16">
           Our expertly crafted website seamlessly combines stunning web design

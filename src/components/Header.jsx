@@ -86,10 +86,21 @@ function Header() {
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">PROJECT</h6>
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">ABOUT</h6>
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">CONTACT</h6>
+        <div className="resume">
+        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">RESUME</h6>
+          <motion.div
+            className="iconDownload"
+            onClick={handleDownloadResume}
+            animate={isIconRotating ? "rotating" : "static"}
+            variants={iconVariants}
+          >
+            <FontAwesomeIcon icon={faDownload} />
+          </motion.div>
+        </div>
       </motion.div>
       <div className="mobileHeader container flex items-center h-20 shadow-lg shadow-blue-950">
         <div className="resume">
-          <p className="text-4xl">Resume</p>
+          <h3 className="text-4xl">RESUME</h3>
           <motion.div
             className="iconDownload"
             onClick={handleDownloadResume}
@@ -111,7 +122,7 @@ function Header() {
             <FontAwesomeIcon icon={faBars} />
           </motion.div>
           <motion.div
-            className="mobileMenuList"
+            className="mobileMenuList shadow-lg shadow-blue-950"
             style={{ display: isMenuOpen ? "flex" : "none" }}
             ref={mobileMenuListRef}
             variants={menuVariants}
@@ -120,10 +131,10 @@ function Header() {
             exit="hidden"
             transition={{ duration: 0.4 }}
           >
-            <h6 className="text-3xl">HOME</h6>
-            <h6 className="text-3xl">PROJECT</h6>
-            <h6 className="text-3xl">ABOUT</h6>
-            <h6 className="text-3xl">CONTACT</h6>
+            <a href="#home" className="text-3xl">HOME</a>
+            <a href="#project" className="text-3xl">PROJECT</a>
+            <a href= "#experience"className="text-3xl">ABOUT</a>
+            <a href="#contact" className="text-3xl">CONTACT</a>
           </motion.div>
         </div>
       </div>

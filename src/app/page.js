@@ -11,6 +11,7 @@ import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Project from "@/components/Project";
 import Contact from "@/components/Contact";
+import Skills from "@/components/Skills";
 config.autoAddCss = false;
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
           <Header />
           <Hero />
           <Experience />
+          <Skills/>
           <Work />
           <Project/>
           <Contact/>
