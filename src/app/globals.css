@@ -93,6 +93,7 @@ body {
 
 .heroRightImageContainer{
   /* display: none; */
+  visibility: hidden;
 }
 
 .heroDescText{
@@ -545,6 +546,11 @@ a:hover {
 
   body{
     background-image: radial-gradient(circle farthest-corner at 50% 50%, #0f0c25, #0f0c25) !important;
+  }
+
+  .heroRightImageContainer{
+    /* display: none; */
+    visibility: hidden;
   }
 
   .mobileHeader {

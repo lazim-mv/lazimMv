@@ -1,6 +1,6 @@
 import React from "react";
 import nex from "../../public/images/nex2.png";
-import proc from "../../public/images/proWeb.png";
+import bmcKsa from "../../public/images/bmcksa.png";
 import Image from "next/image";
 import AnimationWrapper from "./AnimationWrapper";
 
@@ -21,7 +21,7 @@ function Project() {
           <div className="pTextContainer">
             <h3 className="cardTitle">NEXWAVE</h3>
             <p className="cardDesc">
-            NEXWAVE IS A comprehensive WEBSITE THAT OFFERS services, including
+              NEXWAVE IS A comprehensive WEBSITE THAT OFFERS services, including
               digital strategy, development, marketing, and designing
             </p>
             <div className="buttonContainer">
@@ -39,10 +39,10 @@ function Project() {
       <AnimationWrapper>
         <div className="pCard1 flex mx-auto mt-20">
           <div className="pTextContainer">
-          <h3 className="cardTitle">PROCUBE</h3>
+            <h3 className="cardTitle">BEACON</h3>
             <p className="cardDesc">
-              PROCUBE IS A comprehensive WEBSITE THAT OFFERS services, including
-              digital strategy, development, marketing, and designing
+              Beacon is a Management Consultants THAT OFFERS services including Business
+              Incorporation,Financial & Accounting, Services Audit & Taxation
             </p>
             <div className="buttonContainer">
               <a href="https://procube.cx/" className="button">
@@ -51,7 +51,7 @@ function Project() {
             </div>
           </div>
           <div className="pImageContainer">
-            <Image className="pImageNex" src={proc} alt="" />
+            <Image className="pImageNex" src={bmcKsa} alt="" />
           </div>
         </div>
       </AnimationWrapper>
