@@ -117,8 +117,8 @@ body {
 }
 
 .videoBackground {
-  width: 510px;
-  height: 120px;
+  width: 530px;
+  height: 140px;
   object-fit: cover;
 }
 
@@ -230,11 +230,12 @@ body {
 
 .button:hover {
   background-color: rgba(23, 37, 84,0.8);
-  box-shadow: 0 0 10px   rgba(23, 37, 84,0.8), 
+  /* box-shadow: 0 0 10px   rgba(23, 37, 84,0.8), 
               0 0 20px   rgba(23, 37, 84,0.8), 
               0 0 40px   rgba(23, 37, 84,0.8), 
-              0 0 80px   rgba(23, 37, 84,0.8);
+              0 0 80px   rgba(23, 37, 84,0.8); */
   color: #fff;
+  border-top: 1px solid white;
   border-color: transparent;
 }
 
@@ -415,6 +416,12 @@ body {
   z-index: -1;
 }
 
+.skillsContainer.hovered .skillsIcon li {
+  transition: all 0.7s;
+  z-index: 1;
+  transform: scale(1.1); /* Adjust scale factor if needed */
+}
+
 .skillCircle:hover .skillsIcon {
   transition: all 0.7s;
   z-index: 1;
@@ -549,8 +556,8 @@ a:hover {
   }
 
   .heroRightImageContainer{
-    /* display: none; */
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
   }
 
   .mobileHeader {
@@ -649,6 +656,7 @@ a:hover {
   }
 
   .heroRightContainer{
+    display: none;
     align-items: center;
   }
 

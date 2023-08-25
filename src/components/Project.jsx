@@ -25,7 +25,7 @@ function Project() {
               digital strategy, development, marketing, and designing
             </p>
             <div className="buttonContainer">
-              <a href="https://www.nexwave.cx/" className="button">
+              <a href="https://nexwave-may.vercel.app/" className="button">
                 Preview
               </a>
             </div>
