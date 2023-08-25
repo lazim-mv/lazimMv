@@ -79,7 +79,7 @@ function Header() {
         className="headerList container flex justify-around items-center h-20 shadow-lg shadow-blue-950"
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
-        exist={{ opacity: 0, y: -200 }}
+        exit={{ opacity: 0, y: -200 }}
         transition={{ delay: 0.1, duration: 0.55 }}
       >
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">HOME</h6>

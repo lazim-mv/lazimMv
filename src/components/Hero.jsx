@@ -11,9 +11,11 @@ import HeroAnimationWrapper from "./HeroAnimationWrapper";
 
 function Hero() {
   const [web, setWeb] = useState(false);
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsmobile] = useState(0);
 
   useEffect(() => {
+    const width = window.innerWidth <= 768;
+    setIsmobile(width)
     setWeb(isMobile);
   }, []);
 
@@ -97,7 +99,7 @@ function Hero() {
                 className="text-2xl heroMobileDescText"
                 initial={rightAnimation.initial}
                 animate={rightAnimation.animate}
-                exist={rightAnimation.exit}
+                exit={rightAnimation.exit}
                 transition={rightAnimation.transition}
               >
                 Discover a world of captivating design, curated with passion and
@@ -108,7 +110,7 @@ function Hero() {
               className="heroRightHeadingContainer self-center pt-8"
               initial={leftAnimation.initial}
               animate={leftAnimation.animate}
-              exist={leftAnimation.exit}
+              exit={leftAnimation.exit}
               transition={leftAnimation.transition}
             >
               <h1 className="text-7xl heroRightHeadingText">LAZIM</h1>
@@ -183,10 +185,10 @@ function Hero() {
             </div>
             <motion.div
               className="heroRightHeadingContainer self-center pt-8"
-              initial={leftAnimation.initial}
-              animate={leftAnimation.animate}
-              exist={leftAnimation.exit}
-              transition={leftAnimation.transition}
+              // initial={leftAnimation.initial}
+              // animate={leftAnimation.animate}
+              // exit={leftAnimation.exit}
+              // transition={leftAnimation.transition}
             >
               <h1 className="text-7xl heroRightHeadingText">LAZIM</h1>
               <h1 className="text-7xl heroRightHeadingText">LATHEEF</h1>
