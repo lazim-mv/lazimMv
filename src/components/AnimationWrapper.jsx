@@ -12,7 +12,9 @@ function AnimationWrapper({ children }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(inView);
+    if(inView){
+      setIsVisible(inView);
+    }
   }, [inView]);
 
   const variants = {

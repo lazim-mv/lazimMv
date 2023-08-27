@@ -87,15 +87,19 @@ function Header() {
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">ABOUT</h6>
         <h6 className="text-2xl hover:text-sky-700 cursor-pointer">CONTACT</h6>
         <div className="resume">
-        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">RESUME</h6>
-          <motion.div
-            className="iconDownload"
-            onClick={handleDownloadResume}
-            animate={isIconRotating ? "rotating" : "static"}
-            variants={iconVariants}
-          >
-            <FontAwesomeIcon icon={faDownload} />
-          </motion.div>
+          <div className="iconDownload" onClick={handleDownloadResume}>
+            <div>
+              <h6 className="text-2xl hover:text-sky-700 cursor-pointer">
+                RESUME
+              </h6>
+            </div>
+            <motion.div
+              animate={isIconRotating ? "rotating" : "static"}
+              variants={iconVariants}
+            >
+              <FontAwesomeIcon icon={faDownload} />
+            </motion.div>
+          </div>
         </div>
       </motion.div>
       <div className="mobileHeader container flex items-center h-20 shadow-lg shadow-blue-950">
@@ -131,10 +135,18 @@ function Header() {
             exit="hidden"
             transition={{ duration: 0.4 }}
           >
-            <a href="#home" className="text-3xl">HOME</a>
-            <a href="#project" className="text-3xl">PROJECT</a>
-            <a href= "#experience"className="text-3xl">ABOUT</a>
-            <a href="#contact" className="text-3xl">CONTACT</a>
+            <a href="#home" className="text-3xl">
+              HOME
+            </a>
+            <a href="#project" className="text-3xl">
+              PROJECT
+            </a>
+            <a href="#experience" className="text-3xl">
+              ABOUT
+            </a>
+            <a href="#contact" className="text-3xl">
+              CONTACT
+            </a>
           </motion.div>
         </div>
       </div>
