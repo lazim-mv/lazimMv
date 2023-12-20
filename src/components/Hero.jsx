@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../app/globals.css";
 import Image from "next/image";
-import myImage from "../../public/images/mySelf.png";
+import myImage from "../../public/images/crop1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
@@ -43,7 +43,7 @@ function Hero() {
     <>
       <div
         id="home"
-        className="container flex  gap-4 heroMainContainer pt-8 pl-32 pr-28"
+        className="container flex  gap-4 heroMainContainer pt-16 pl-32 pr-28"
       >
         <motion.div
           ref={leftRef}
@@ -73,7 +73,7 @@ function Hero() {
         </motion.div>
         <div className="heroRightContainer flex  flex-col justify-end">
           <div className="heroRightImageContainer self-end">
-            <Image src={myImage} width={320} height={320} alt="" />
+            <Image src={myImage} width={320} height={320} alt="hh" quality={100}/>
           </div>
         </div>
       </div>
@@ -85,12 +85,14 @@ function Hero() {
         transition={rightAnimation.visible.transition}
       >
         <div className="heroDownArrowContainer self-end">
-          <FontAwesomeIcon
-            className="text-8xl"
-            icon={faArrowDown}
-            fade
-            style={{ color: "#ededee" }}
-          />
+          <a href="#project">
+            <FontAwesomeIcon
+              className="text-8xl"
+              icon={faArrowDown}
+              fade
+              style={{ color: "#ededee" }}
+            />
+          </a>
         </div>
         <div className="heroShortDescContainer self-end">
           <p className="text-2xl heroDescText">
@@ -102,9 +104,9 @@ function Hero() {
           <motion.p
             ref={rightRef}
             className="text-2xl heroMobileDescText"
-            initial={rightInView ? "visible" : "hidden"}
-            animate={rightInView ? "visible" : "hidden"}
-            variants={rightAnimation}
+            // initial={rightInView ? "visible" : "hidden"}
+            // animate={rightInView ? "visible" : "hidden"}
+            // variants={rightAnimation}
           >
             Discover a world of captivating design, curated with passion and
             precision.
@@ -112,10 +114,10 @@ function Hero() {
         </div>
         <motion.div
           ref={leftRef}
-          className="heroRightHeadingContainer self-center pt-8"
-          initial={leftInView ? "visible" : "hidden"}
-          animate={leftInView ? "visible" : "hidden"}
-          variants={leftAnimation}
+          className="heroRightHeadingContainer self-center pt-16"
+          initial={rightInView ? "visible" : "hidden"}
+          animate={rightInView ? "visible" : "hidden"}
+          variants={rightAnimation}
         >
           <h1 className="text-7xl heroRightHeadingText">LAZIM</h1>
           <h1 className="text-7xl heroRightHeadingText">LATHEEF</h1>

@@ -17,7 +17,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 function Skills() {
   return (
     <>
-      <div className="skillsContainer mt-52">
+      <div className="skillsContainer mt-52" id="skills">
         {/* <h5 className="workPhilosophyHeading mb-14 text-center">SKILLS</h5> */}
         <div className="skillCircle shadow-md shadow-zinc-200">
           <div className="flex flex-col">

@@ -82,10 +82,11 @@ function Header() {
         exit={{ opacity: 0, y: -200 }}
         transition={{ delay: 0.1, duration: 0.55 }}
       >
-        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">HOME</h6>
-        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">PROJECT</h6>
-        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">ABOUT</h6>
-        <h6 className="text-2xl hover:text-sky-700 cursor-pointer">CONTACT</h6>
+        <a className="text-2xl hover:text-sky-700 cursor-pointer" href="#home">HOME</a>
+        <a className="text-2xl hover:text-sky-700 cursor-pointer" href="#experience">ABOUT</a>
+        <a className="text-2xl hover:text-sky-700 cursor-pointer" href="#skills">SKILLS</a>
+        <a className="text-2xl hover:text-sky-700 cursor-pointer" href="#project">PROJECT</a>
+        <a className="text-2xl hover:text-sky-700 cursor-pointer" href="#contact">CONTACT</a>
         <div className="resume">
           <div className="iconDownload" onClick={handleDownloadResume}>
             <div>
